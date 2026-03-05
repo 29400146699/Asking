@@ -1,0 +1,30 @@
+/**
+该文件是 App 根组件所对应的样式
+**/
+
+
+.header {
+    width: 100%;
+    background-color: black;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  
+.sider {
+    width: 200px;
+    height: calc(100vh - 64px);
+    position: fixed;
+    top: 64px;
+  }
+
+.content {
+    margin-left: 200px;
+    margin-top: 64px;
+    padding: 20px;
+    min-height: calc(100vh - 64px);
+    background-color: #f0f2f5;
+  }
+  
+  

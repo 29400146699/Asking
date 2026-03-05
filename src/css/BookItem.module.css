@@ -1,0 +1,111 @@
+.container{
+  /* 卡片尺寸（可按你页面再微调） */
+  width: 220px;
+  height: 320px;
+  box-sizing: border-box;
+
+  margin: 0 14px 18px 0;
+  padding: 12px 12px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.container:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+/* 让 bookContainer 占主要空间：封面 + 文案 */
+.bookContainer{
+  width: 100%;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 10px;
+}
+
+/* 封面区域 */
+.left{
+  width: 100%;
+  height: 210px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .bookPic{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* 想像第一张图更“完整显示封面”就用 contain */
+  border-radius: 4px;
+}
+
+/* 标题 + 简介区域 */
+.right{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  font-weight: 200;
+  gap: 6px;
+}
+
+.top{
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+
+  /* 一行省略，类似第一张图标题显示 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+/* 底部统计：浏览/评论 */
+.bookNum{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 8px;
+  margin-top: 8px;
+
+  border-top: 1px solid #f1f1f1;
+
+  font-size: 12px;
+  font-weight: 200;
+  color: rgb(102,102,102);
+}
+
+.bookList{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  gap: 18px 14px;
+  justify-content: start;
+}

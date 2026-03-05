@@ -1,0 +1,32 @@
+.headerContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    padding: 0 30px;
+    
+}
+
+.headerContainer .logoContainer{
+    display: flex;
+
+}
+
+.headerContainer .logoContainer .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.headerContainer .searchContainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.headerContainer .loginContainer{
+    display: flex;
+
+}
