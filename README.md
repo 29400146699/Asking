@@ -8,6 +8,10 @@
 
 https://asking-five.vercel.app
 
+还有Netlify：
+
+https://timely-sundae-9c70e9.netlify.app
+
 ## 项目简介
 
 本项目是一个技术社区的前端项目，主要实现了技术问答列表展示、书籍推荐、搜索等功能。通过该项目练习了 React 项目结构设计、组件拆分以及前端项目部署流程。
